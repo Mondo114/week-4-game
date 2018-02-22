@@ -1,0 +1,136 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-image: url("../image/crystal-background-top.jpg");
+    height: 120px;
+    color: white;
+    border: 4px solid black;
+    font-family: 'Black Ops One';
+}
+
+#title {
+    font-size: 60px;
+    text-align: center;
+}
+
+body {
+    background-image: url("../image/crystal-background-bottom.jpg");
+}
+
+.row {
+    padding: 10px 0 10px 10px;
+}
+
+.instructions-col {
+    margin: 5px 0 0 40px;
+}
+
+#how-to-play {
+    font-weight: 100;
+    font-family: 'Black Ops One';
+}
+
+.instructions {
+    border: 4px solid black;
+    box-shadow: 20px 20px 20px rgb(29, 7, 49);
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    background-color: rgb(129, 200, 248);
+}
+
+.collected-row {
+    margin: 0 auto;
+}
+
+.collected-col {
+    float: none;
+    margin: 0 auto;
+    height: 80px;
+    font-weight: 700;
+    border: 4px solid black;
+    box-shadow: 20px 20px 20px rgb(29, 7, 49);
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    background-color: rgb(127, 236, 127);
+}
+
+.results-col {
+    margin-left: 50px;
+    height: 80px;
+    font-weight: 700;
+    border: 4px solid black;
+    box-shadow: 20px 20px 20px rgb(29, 7, 49);
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    background-color: rgb(209, 178, 238);
+}
+
+.wins-col {
+    margin-left: 475px;
+}
+
+.results-p {
+    font-family: 'Black Ops One';
+    font-weight: 100;
+}
+
+.large-container {
+    width: 100%;
+}
+
+.big-crystal {
+    margin-left: 70px;
+    position: relative;
+}
+
+#big-crystal-number {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    margin: auto;
+    left: 45%;
+    top: 47%;
+}
+
+.status-span-1 {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    left: 50%;
+}
+
+.status-span-2 {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    left: 40%;
+}
+
+.small-crystal {
+    margin-top: 30px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 11px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(50, 93, 231);
+    color: rgb(232, 197, 252);
+    text-align: center;
+    border: 4px solid black;
+}
+
+#copyright {
+    opacity: 0.5;
+}

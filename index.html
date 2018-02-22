@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector: Brenton Edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="title">Crystal Collector</h1>
+    </div>
+
+    <div class="container large-container">
+        <div class="row">
+            <div class="col-md-4 instructions-col">
+                <p class="instructions">
+                    <span id="how-to-play">How to Play: </span>The small crystals will be given a random value at the start of each round. Click
+                    on the small crystals to match the value of the big crystal.
+                    <br>
+                    <br>Click on a crystal to reveal its value and add that value of points to your "Total Collected".
+                    <br>
+                    <br>You win the game by matching your Total Collected to the value of the big crystal.
+                    <br>
+                    <br>You lose the game if your Total Collected exceeds the value of the big crystal.</p>
+            </div>
+            <div class="col-md-3">
+                <img class="big-crystal center-block" src="assets/image/big-crystal.png" alt="Big Crystal">
+                <span id="big-crystal-number"></span>
+            </div>
+            <div class="col-md-1">
+                <img class="small-crystal img-center" value="crystal-1" src="assets/image/crystal-1.png" width="180px" alt="Crystal 1">
+            </div>
+            <div class="col-md-1">
+                <img class="small-crystal img-center" value="crystal-2" src="assets/image/crystal-2.png" width="180px" alt="Crystal 2">
+            </div>
+            <div class="col-md-1">
+                <img class="small-crystal img-center" value="crystal-3" src="assets/image/crystal-3.png" width="180px" alt="Crystal 3">
+            </div>
+            <div class="col-md-1">
+                <img class="small-crystal img-center" value="crystal-4" src="assets/image/crystal-4.png" width="180px" alt="Crystal 4">
+            </div>
+        </div>
+
+        <div class="row collected-row">
+            <div class="col-md-3 collected-col">
+                <p class="results-p">Total Collected:
+                    <span class="status-span-1" id="total-collected"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row results-row">
+            <div class="col-md-2 results-col wins-col">
+                <p class="results-p">Wins:
+                    <span class="status-span-2" id="wins"></span>
+                </p>
+            </div>
+            <div class="col-md-2 results-col">
+                <p class="results-p">Losses:
+                    <span class="status-span-2" id="losses"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <span id="copyright">&copy; Copyright 2018 Brenton Jenkins</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+<!-- The player will have to guess the answer, just like in Hangman. This time, though, the player will guess with numbers instead of letters.
+
+Here's how the app works:
+
+-There will be four crystals displayed as buttons on the page.
+
+-The player will be shown a random number at the start of the game.
+
+-When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
+
+-Your game will hide this amount until the player clicks a crystal.
+ When they do click one, update the player's score counter.
+ The player wins if their total score matches the random number from the beginning of the game.
+
+-The player loses if their score goes above the random number.
+
+-The game restarts whenever the player wins or loses.
+
+-When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+ The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+
+ Option 1 Game design notes
+ The random number shown at the start of the game should be between 19 - 120.
+
+ Each crystal should have a random hidden value between 1 - 12. -->
